@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shetland yarns palette picker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Shetland yarns palette picker</h1>
+        <p>This color palette shows Spindrift and Double Knitting yarn colors from
+            <a href="http://www.jamiesonsofshetland.co.uk">Jamieson's of Shetland</a>. This tool is not affiliated with
+            Jamieson's in any way.</p>
+
+        <h3>How to use this tool</h3>
+
+        <ul>
+            <li>Add yarns to your "selected colors" by clicking on them in the palette</li>
+            <li>Drag your selected colors to change their order</li>
+            <li>Hover over a yarn and click the "remove" button to remove it from the selected colors</li>
+        </ul>
+
+        <div class="well" style="overflow:hidden">
+
+            <div class="col-xs-12" id="controls">
+                <button class="btn btn-xs btn-danger clear pull-right">Clear selected colors</button>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <h2>Color palette</h2>
+
+                <ul id="palette">
+                </ul>
+            </div>
+
+            <div class="col-sm-6 col-md-8">
+                <h2>Selected colors</h2>
+
+                <ul id="selected">
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script type="text/javascript" src="js/colordragger.js"></script>
+</body>
+</html>
